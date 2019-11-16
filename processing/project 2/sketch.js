@@ -1,20 +1,18 @@
 function setup() {
-  createCanvas(500,400,WEBGL);
+  createCanvas(2000,800,);
+  background(255,204,0);
 }
 
-function draw() {
-  background(445);
-  if (mouseIsPressed) {
-    fill(79);
-  } else {
-    fill(600);
-  }
+function draw(){
+  ellipse(700, 225, 80, 30);
+  fill(300);
+  ellipse(700, 225, 30, 30);
+  fill(10);
 
-  {ellipseMode(CENTER);
-    fill(100); 
-    ellipse(50, 50, 55, 30);}
+  ellipse(800, 225, 80, 30);
+  fill(300);
+  ellipse(800, 225, 30, 30);
+  fill(10);
 
-  rotateX(frameCount * 0.01);
-  rotateY(frameCount * 0.05);
-  sphere(59);
+  ellipse(750, 400, 200, 30);
 }
